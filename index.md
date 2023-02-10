@@ -70,3 +70,18 @@ To signify which part of the text to change the color of, there are a variety of
 `E` changes errors, `H` changes headers set with the `--header` option, `M` changes the color of mark letters in the status column, `N` changes the 
 color of line numbers, `P` changes prompts' color scheme, `R` changes the color of the Rscroll character, `S` changes the color of search results, 
 `W` changes highlights enabled with -w, `d` changes the color of bold text, `k` for blinking text, `s` for standout text and `u` for underlined text. 
+
+Next, to signify the color there are two components. The first letter is the color of the textin the foreground, and the other letter signifies the background color. The color options are as follows: 'b' for blue, 'c' for cyan, 'g' for green, 'k' for black, 'm' for magenta, 'r' for red, 'w' for white, and 'y' for yellow. Using a capital letter denotes a brighter shade of the color.
+
+That's a lot, so here's an example modifier: `-DuBc` displays all underlined characters with bright blue text on a cyan background.
+
+Now to put it into practice. For the first example, I'll display all searched terms in `HawaiiHistory.txt` as bright magenta on a cyan background.
+
+`less --use-color -DSMc HistoryHawaii.txt` 
+
+Now I'll search using `/Hawaii`
+
+Here is the result:
+
+![image](https://user-images.githubusercontent.com/122569112/217972153-feedfe06-d644-4191-a04a-7dec781ead78.png)
+
