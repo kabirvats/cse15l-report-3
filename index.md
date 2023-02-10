@@ -85,3 +85,25 @@ Here is the result:
 
 ![image](https://user-images.githubusercontent.com/122569112/217972153-feedfe06-d644-4191-a04a-7dec781ead78.png)
 
+In the second example, I'll display `IntroIstanbul.txt`'s line numbers as blue on a bright yellow background.
+
+![image](https://user-images.githubusercontent.com/122569112/218214139-5e52c17a-0521-4610-bb5c-6b6b31d3d6aa.png)
+
+# Option 4: Marking text
+
+While reading a text file, it is useful to be able to mark or 'bookmark' certain lines. That is where the `m` command comes into play. By following `m` with a 
+letter, lowercase or upercase, the top line on the screen is marked with that letter, and can be accessed with the command `'` + the inputted letter. This command
+is useful for marking lines for easy access. By using the -J option when the file is loaded, we can see the markings. I learned about this on https://www.man7.org/linux/man-pages/man1/less.1.html.
+
+As an example, I'll load up HistoryItaly with `less -J HistoryItaly.txt`. Having typed `mA` the screen I was on is marked with A. I can visit it anytime with 
+`'A`.
+
+![image](https://user-images.githubusercontent.com/122569112/218221116-ecf6e265-68c6-4e98-a42a-9d32470e443d.png)
+
+We can change the color of these markings with the -D tag, here is an example:
+
+`less --use-color -J -DMGw 
+
+Having used `mA` `mB` and `mC`, I have made three separate marks which are bright green on a white background.
+
+![image](https://user-images.githubusercontent.com/122569112/218221598-da3e10ad-9e02-4aa5-bf68-f238e533e3fe.png)
