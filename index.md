@@ -9,7 +9,7 @@ is the input followed by the output:
 
 `less HistoryItaly.txt`
 
-**INSERT IMAGE**
+![image](https://user-images.githubusercontent.com/122569112/218221922-6349e5be-8e42-40a8-b3ff-d67ced9f962e.png)
 
 As you can see, the contents of the file were displayed in the terminal. I can exit this screen and return to the terminal by pressing q.
 
